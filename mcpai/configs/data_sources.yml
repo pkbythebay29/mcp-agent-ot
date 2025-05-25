@@ -1,0 +1,19 @@
+
+mqtt:
+  - host: "localhost"
+    port: 1883
+    topics:
+      - "sensors/temperature"
+      - "sensors/pressure"
+    username: "user"
+    password: "pass"
+
+opcua:
+  - endpoint: "opc.tcp://localhost:4840"
+    node_id: "ns=2;i=2"
+
+modbus:
+  - host: "localhost"
+    port: 502
+    register: 1
+    interval: 5
